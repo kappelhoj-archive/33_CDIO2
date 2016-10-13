@@ -25,9 +25,14 @@ public class Board {
 			fields[i] = new Field(gold[i], extraTurn);
 		}
 	}
-
-	public Field[] getFields()
+	
+	public int getFieldGold(int fieldIndex)
 	{
-		return fields;
+		return fields[fieldIndex].getGold();
+	}
+	
+	public boolean getFieldExtraTurn(int fieldIndex)
+	{
+		return fields[fieldIndex].getExtraTurn();
 	}
 }
