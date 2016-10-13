@@ -15,6 +15,7 @@ public class TUI
 		System.out.println(GameText.textWelcome());
 		String[] playerNames = getPlayerNames();
 		System.out.println(GameText.gameRules());
+		System.out.println(GameText.firstTurn());
 	
 		return playerNames;
 	}
