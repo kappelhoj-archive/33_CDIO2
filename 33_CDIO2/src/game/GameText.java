@@ -25,6 +25,7 @@ public class GameText {
 /*(108)*/	"-80 +T",
 /*(110)*/	"-50",
 /*(111)*/	"+650"};
+	
 	public static String[] fieldDescription={
 /*(201)*/   "Along your journey, you come across a dark tower.  A through exploration reveals a chest of gold. You recover treasures worth 250 gold coins.",
 /*(202)*/   "A huge crater blocks your further journey. It stretches on for hundreds of feet. A quick search near the mound of the crater reveals a rusty trolley and a railroad track. The tracks lead across the crater. A red imp sits in a ticketstand next to the old worn trolley. You pay the hefty price of 100 gold coins to cross the crater.",
@@ -38,26 +39,40 @@ public class GameText {
 /*(210)*/	"Enraptured by the surrounding greenery, you fail to notice the huge pit in front of you. Tumbling down the side of the  pit, your gold lined pockets scatter their contents. You lose 50 gold coins on your painful way down.",
 /*(211)*/	"In your journey, you happen to meet a friendly dwarf. He offers you a huge payment in return for helping him recover a large gold ingot lodged inside his goldmine. You spend the rest of the day working alongside the dwarf, and succesfully retrieve the shiny metal. The dwarfs rewards you a staggering 650 gold coins!"
 };
+	public static String[] fieldShortDescription={
+/*(301)*/   "A dark tower.",
+/*(302)*/   "A huge crater.",
+/*(303)*/	"The palace gates",
+/*(304)*/	"A cold desert.",
+/*(305)*/	"The walled city",
+/*(306)*/	"A lone monastery",
+/*(307)*/	"A black cave",
+/*(308)*/	"Huts on a mountain",
+/*(309)*/	"A werewolf wall",
+/*(310)*/	"A large pit",
+/*(311)*/	"A Goldmine"
+			};
 	
 	
 	/**
 	 * The method enterPlayerNames returns a string Which asks the players to enter their names.
+	 * @param  The number of the player
 	 * @return String
 	 */
 	
-	public static String enterPlayerNames()
+	public static String enterPlayerName(int number)
 	{
-		return "Please enter the name of the players";
+		return "Please enter the name of player " + number;
 	}
 	
+	/**
+	 * The method textWelcome creates a string with the game's welcome text.
+	 * @return String
+	 */
 	
-	
-	public static String introText(String playerName)
+	public static String textWelcome()
 	{	
-		String introText = "";
-		introText = "Welcome to the game 'A Tale of Tales' \n" + gameRules();
-		
-		return introText;
+		return "Welcome to the game 'A Tale of Tales' \n";
 	}
 	
 	/**
@@ -72,6 +87,10 @@ public class GameText {
 		return playerName + "has rolled a " + value[0] + " and a " + value[1];
 	}
 	
+	/**
+	 * The method gameRules returns a string which contains the game rules.
+	 * @return String
+	 */
 	public static String gameRules()
 	{
 		String gameRules = "";
