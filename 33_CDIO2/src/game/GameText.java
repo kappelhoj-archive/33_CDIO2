@@ -42,12 +42,13 @@ public class GameText {
 	
 	/**
 	 * The method enterPlayerNames returns a string Which asks the players to enter their names.
+	 * @param  The number of the player
 	 * @return String
 	 */
 	
-	public static String enterPlayerNames()
+	public static String enterPlayerName(int number)
 	{
-		return "Please enter the name of the players";
+		return "Please enter the name of player " + number;
 	}
 	
 	
