@@ -62,7 +62,7 @@ public class GameText {
 	
 	public static String enterPlayerNameText(int number)
 	{
-		return "Please enter the name of player " + number;
+		return "Please enter the name of player " + number + "\n";
 	}
 	
 	/**
@@ -87,7 +87,7 @@ public class GameText {
 		gameRules = "- All players start with 1000 gold coins. \n"
 				  + "- The first player to achieve 3000 gold coins wins the game. \n"
 				  + "- A players funds are affected each turn. The amount depends on which field you land on in the current turn. \n"
-				  + "- A player always lands on the field number corresponding to the sum of the dice.";
+				  + "- A player always lands on the field number corresponding to the sum of the dice. \n";
 		return gameRules;
 	}
 	
@@ -99,7 +99,7 @@ public class GameText {
 	 */
 	public static String firstTurnText()
 	{
-		return "A player has been randomly selected to start the game"; 
+		return "A player has been randomly selected to start the game. \n"; 
 	}
 	
 	/**
@@ -109,7 +109,7 @@ public class GameText {
 	 */
 	public static String turnText(String playerName)
 	{
-		return "It is " + playerName + "'s turn";
+		return "It is " + playerName + "'s turn \n";
 	}
 	
 	/**
@@ -119,7 +119,7 @@ public class GameText {
 	 */
 	public static String extraTurnText(String playerName)
 	{
-		return playerName + " has gained an extra turn";
+		return playerName + " has gained an extra turn \n";
 	}
 	
 	/**
@@ -130,7 +130,7 @@ public class GameText {
 	 */
 	public static String rollText(String playerName, int[] value)
 	{
-		return playerName + "has rolled a " + value[0] + " and a " + value[1];
+		return playerName + "has rolled a " + value[0] + " and a " + value[1] + "."+ "\n";
 	}
 	
 	/**
@@ -140,6 +140,6 @@ public class GameText {
 	 */
 	public static String winnerText(String playerName)
 	{
-		return "Congratulations " + playerName + " has won the game!";
+		return "Congratulations " + playerName + " has won the game! \n";
 	}
 }
