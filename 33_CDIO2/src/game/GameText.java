@@ -38,4 +38,50 @@ public class GameText {
 /*(210)*/	"Enraptured by the surrounding greenery, you fail to notice the huge pit in front of you. Tumbling down the side of the  pit, your gold lined pockets scatter their contents. You lose 50 gold coins on your painful way down.",
 /*(211)*/	"In your journey, you happen to meet a friendly dwarf. He offers you a huge payment in return for helping him recover a large gold ingot lodged inside his goldmine. You spend the rest of the day working alongside the dwarf, and succesfully retrieve the shiny metal. The dwarfs rewards you a staggering 650 gold coins!"
 };
+	
+	
+	/**
+	 * The method enterPlayerNames returns a string Which asks the players to enter their names.
+	 * @return String
+	 */
+	
+	public static String enterPlayerNames()
+	{
+		return "Please enter the name of the players";
+	}
+	
+	
+	
+	public static String introText(String playerName)
+	{	
+		String introText = "";
+		introText = "Welcome to the game 'A Tale of Tales' \n" + gameRules();
+		
+		return introText;
+	}
+	
+	/**
+	 * The method rollText returns a String which contains what a particular player has rolled with the dice.
+	 * @param playerName The name of the player (String).
+	 * @param value A array of two dice values (Int[])
+	 * @return String rollText
+	 */
+	
+	public static String rollText(String playerName, int[] value)
+	{
+		return playerName + "has rolled a " + value[0] + " and a " + value[1];
+	}
+	
+	public static String gameRules()
+	{
+		String gameRules = "";
+		gameRules = "The game rules are as follows: \n";
+		gameRules = "- All players start with 1000 gold coins. \n"
+				  + "- The first player to achieve 3000 gold coins wins the game. \n"
+				  + "- A player receive or loss gold coins each turn. The amount depends on which field you landed on in the current turn. \n"
+				  + "- A player always lands on the field corresponding to the sum of the dice.";
+		return gameRules;
+	}
+	
+	
 }
