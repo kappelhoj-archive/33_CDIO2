@@ -66,9 +66,10 @@ public class GUIController {
 	public void getTurn(String playerName,int playerBalance,int playerPosition,int[] currentDice){	
 
 		GUI.setDice(currentDice[0],1+varians(),5+varians(), currentDice[1],3+varians(),7+varians());
+		movePlayer(playerName,playerPosition+1);
 		GUI.getUserButtonPressed(GameText.rollText(playerName, currentDice)+"\n"+GameText.fieldDescription[playerPosition],"Ok");
 		GUI.setBalance(playerName, playerBalance);
-		movePlayer(playerName,playerPosition+1);
+		
 		
 	}
 	public int varians(){

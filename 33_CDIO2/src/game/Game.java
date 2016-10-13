@@ -59,7 +59,11 @@ public class Game {
 	}
 
 	public static void main(String[] args) {
+		//Initialize the game
 		startGame();
+		//Makes sure someone gets information to start.
+		turn(false);
+		//Game loop
 		while (!gameWon) {
 			playTurn();
 		}
