@@ -16,7 +16,7 @@ public class GUIController {
 			.setDescription(GameText.fieldDescription[i])
 			.build();
 
-
+		//Create the board with the 11 fields
 		GUI.create(fields);
 		GUI.setDice(3, 4);
 	}
