@@ -56,6 +56,12 @@ public class GUIController {
 		GUI.removeAllCars(playerName);
 		GUI.setCar(position, playerName);
 	}
+	public void startTurn(String playerName,boolean extraTurn){
+		if(extraTurn)
+			GUI.getUserButtonPressed(GameText.extraTurnText(playerName),"Roll");
+		else
+			GUI.getUserButtonPressed(GameText.turnText(playerName),"Roll");
+	}
 	
 	public void getTurn(String playerName,int playerBalance,int playerPosition,int[] currentDice){	
 
