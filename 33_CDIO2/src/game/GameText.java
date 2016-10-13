@@ -60,7 +60,7 @@ public class GameText {
 	 * @return String
 	 */
 	
-	public static String enterPlayerName(int number)
+	public static String enterPlayerNameText(int number)
 	{
 		return "Please enter the name of player " + number;
 	}
@@ -70,7 +70,7 @@ public class GameText {
 	 * @return String
 	 */
 	
-	public static String textWelcome()
+	public static String welcomeText()
 	{	
 		return "Welcome to 'A Tale of Tales' \n";
 	}
@@ -80,7 +80,7 @@ public class GameText {
 	 * The method gameRules returns a string which contains the game rules.
 	 * @return String
 	 */
-	public static String gameRules()
+	public static String gameRulesText()
 	{
 		String gameRules = "";
 		gameRules = "The game rules are as follows: \n";
@@ -97,7 +97,7 @@ public class GameText {
 	 * @param playerName The name of the player
 	 * @return String
 	 */
-	public static String firstTurn()
+	public static String firstTurnText()
 	{
 		return "A player has been randomly selected to start the game"; 
 	}
@@ -107,7 +107,7 @@ public class GameText {
 	 * @param playerName The name of the player
 	 * @return String
 	 */
-	public static String turn(String playerName)
+	public static String turnText(String playerName)
 	{
 		return "It is " + playerName + "'s turn";
 	}
@@ -117,7 +117,7 @@ public class GameText {
 	 * @param playerName The name of the player
 	 * @return String
 	 */
-	public static String extraTurn(String playerName)
+	public static String extraTurnText(String playerName)
 	{
 		return playerName + " has gained an extra turn";
 	}
@@ -133,4 +133,8 @@ public class GameText {
 		return playerName + "has rolled a " + value[0] + " and a " + value[1];
 	}
 	
+	public static String winnerText()
+	{
+		
+	}
 }
