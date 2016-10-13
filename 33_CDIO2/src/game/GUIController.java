@@ -32,13 +32,17 @@ public class GUIController {
 	 * @param playerName Player name.
 	 * @param position Position to move player to.
 	 */
-	public void movePlayer(String playerName,int position){
+	private void movePlayer(String playerName,int position){
 		GUI.removeAllCars(playerName);
 		GUI.setCar(position, playerName);
 	}
 	
-	public void changeBalanceTo(String playerName,int balance){
+	private void changeBalanceTo(String playerName,int balance){
 		GUI.setBalance(playerName, balance);
+	} 
+	public void getTurn(String playerName,int playerBalance,int playerPosition,int[] currentDice){
+		
+		
 	}
 	
 	
