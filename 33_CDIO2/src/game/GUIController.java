@@ -39,6 +39,10 @@ public class GUIController {
 	
 	public void changeBalanceTo(String playerName,int balance){
 		GUI.setBalance(playerName, balance);
+	} 
+	public void getTurn(String playerName,int playerBalance,int playerPosition){
+		
+		
 	}
 	
 	
