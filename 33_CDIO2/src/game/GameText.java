@@ -42,15 +42,15 @@ public class GameText {
 	public static String[] fieldShortDescription={
 /*(301)*/   "A dark tower.",
 /*(302)*/   "A huge crater.",
-/*(303)*/	"The palace gates",
+/*(303)*/	"The palace gates.",
 /*(304)*/	"A cold desert.",
-/*(305)*/	"The walled city",
-/*(306)*/	"A lone monastery",
-/*(307)*/	"A black cave",
-/*(308)*/	"Huts on a mountain",
-/*(309)*/	"A werewolf wall",
-/*(310)*/	"A large pit",
-/*(311)*/	"A Goldmine"
+/*(305)*/	"The walled city.",
+/*(306)*/	"A lone monastery.",
+/*(307)*/	"A black cave.",
+/*(308)*/	"Huts on a mountain.",
+/*(309)*/	"A werewolf wall.",
+/*(310)*/	"A large pit.",
+/*(311)*/	"A Goldmine filled with gold."
 			};
 	
 	//public static String introText()
