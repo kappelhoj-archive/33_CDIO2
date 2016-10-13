@@ -26,7 +26,7 @@ public class GUIController {
 		GUI.addPlayer(player2Name,1000);
 		GUI.setDice(3, 4);
 	}
-	
+	 
 	/**
 	 * Move a player to a Field
 	 * @param playerName Player name.
@@ -35,6 +35,10 @@ public class GUIController {
 	public void movePlayer(String playerName,int position){
 		GUI.removeAllCars(playerName);
 		GUI.setCar(position, playerName);
+	}
+	
+	public void changeBalanceTo(String playerName,int balance){
+		GUI.setBalance(playerName, balance);
 	}
 	
 	
