@@ -133,8 +133,13 @@ public class GameText {
 		return playerName + "has rolled a " + value[0] + " and a " + value[1];
 	}
 	
-	public static String winnerText()
+	/**
+	 * The method winnerText returns a String which contains which player has won the game
+	 * @param playerName The name of the player.
+	 * @return String
+	 */
+	public static String winnerText(String playerName)
 	{
-		
+		return "Congratulations " + playerName + " has won the game!";
 	}
 }
