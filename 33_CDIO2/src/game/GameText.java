@@ -38,4 +38,16 @@ public class GameText {
 /*(210)*/	"Enraptured by the surrounding greenery, you fail to notice the huge pit in front of you. Tumbling down the side of the  pit, your gold lined pockets scatter their contents. You lose 50 gold coins on your painful way down.",
 /*(211)*/	"In your journey, you happen to meet a friendly dwarf. He offers you a huge payment in return for helping him recover a large gold ingot lodged inside his goldmine. You spend the rest of the day working alongside the dwarf, and succesfully retrieve the shiny metal. The dwarfs rewards you a staggering 650 gold coins!"
 };
+	
+	public static String introText()
+	{
+		
+	}
+	
+	public static String rollText(String playerName, int[] value)
+	{
+		return playerName + "has rolled a " + value[0] + " and a " + value[1];
+	}
+	
+	
 }
