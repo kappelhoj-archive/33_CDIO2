@@ -32,14 +32,6 @@ public class Game
 			players[i]=new Player(names[i]);
 	}
 
-	public static extraTurn()
-	{
-
-
-
-
-	}
-
 	public static int[] playDice()
 	{
 		diceCup.shakeCup();
@@ -56,15 +48,19 @@ public class Game
 		}				
 	}	
 
-	public static void playTurn(Player[] players)
+	public static void playTurn()
 	{
 		int[] currentDice = playDice();
 		int sum = currentDice[0] + currentDice[1];
 
 		players[turn].changeBalance(board.getFieldGold(sum - 2));
-		if(players[turn].getBalance() == 3000)
-			gameWon = true;
 		controller.getTurn(players[turn].getPlayerName(), players[turn].getBalance(), sum-2, currentDice);
+		if(players[turn].getBalance() == 3000)
+		{
+			gameWon = true;
+			return;
+		}
+		turn(board.getFieldExtraTurn(sum - 2));
 	}
 
 	public static void main(String[] args)
@@ -72,12 +68,9 @@ public class Game
 		startGame();
 		while(!gameWon)
 		{
-			turn(false);
-			
-
-
-
+			playTurn();
 		}
+		controller.endGame(players[turn]);
 	}
 
 }
