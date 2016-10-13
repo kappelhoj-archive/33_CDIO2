@@ -70,7 +70,7 @@ public class GUIController {
 	}
 	
     public void endGame(String playerName){	
-    	GUI.getUserButtonPressed(GameText.winnerText(playerName));
+    	GUI.getUserButtonPressed(GameText.winnerText(playerName),"X"); 
 	}
 	
 	
