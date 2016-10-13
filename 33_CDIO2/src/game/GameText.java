@@ -39,10 +39,26 @@ public class GameText {
 /*(211)*/	"In your journey, you happen to meet a friendly dwarf. He offers you a huge payment in return for helping him recover a large gold ingot lodged inside his goldmine. You spend the rest of the day working alongside the dwarf, and succesfully retrieve the shiny metal. The dwarfs rewards you a staggering 650 gold coins!"
 };
 	
-//	public static String introText()
-//	{	
-//		return introText;
-//	}
+	
+	/**
+	 * The method enterPlayerNames returns a string Which asks the players to enter their names.
+	 * @return String
+	 */
+	
+	public static String enterPlayerNames()
+	{
+		return "Please enter the name of the players";
+	}
+	
+	
+	
+	public static String introText(String playerName)
+	{	
+		String introText = "";
+		introText = "Welcome to the game 'A Tale of Tales' \n" + gameRules();
+		
+		return introText;
+	}
 	
 	/**
 	 * The method rollText returns a String which contains what a particular player has rolled with the dice.
