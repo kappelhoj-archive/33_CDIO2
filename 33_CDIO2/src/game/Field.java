@@ -15,7 +15,7 @@ public class Field {
 		return gold;
 	}
 	
-	public boolean extraTurn()
+	public boolean getExtraTurn()
 	{
 		return extraTurn;
 	}
