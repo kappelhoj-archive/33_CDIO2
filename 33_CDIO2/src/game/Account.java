@@ -3,38 +3,24 @@ package game;
 public class Account {
 
 	private int balance = 1000;
-	
-	public int getbalance(){
+
+	public int getBalance(){
 		return balance;
 	}
-
-	public void changebalance(int fieldValue){
+/**
+ * Method to calculate the new balance based on the int fieldValue.
+ */
+	public void changeBalance(int fieldValue){
 		/**This part of the method simply adds or
 		 * subtracts the field value from the player' balance.
 		 */
 
-		if (fieldValue < 0){
-			while (balance > 0)
-				balance -= fieldValue;
-		}
+		balance=balance+fieldValue;
+		if (balance < 0)
+			balance=0;
+		else if(balance>3000)
+			balance=3000;
 
-		else if (fieldValue > 0){
-			while (balance < 3000)
-				balance += fieldValue;
-		}
-
-		/**This part of the method recognizes if the player already has 0 gold coins,
-		 * it sets the balance to 0 again.
-		 */
-		else if (balance + fieldValue < 0){
-			balance = 0;
-		}
-
-		/**This part of the method recognizes if the player already has 3000 gold coins,
-		 * it sets the balance to 3000 again.
-		 */
-		else if (balance + fieldValue > 3000) {
-			balance = 3000;
-		}
 	}
+
 }

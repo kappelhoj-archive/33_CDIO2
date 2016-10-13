@@ -6,28 +6,33 @@ public class Player {
 
 	private String playerName;
 	private Account account = new Account();
-	
-	int newbalance;
-	
+
+	/** 
+	 * Method to set the players name to the input playername.
+	 */
 	public Player(String playerName)
 	{
 		this.playerName = playerName;
 	}
 	
+	/** 
+	 * Method to return the individual players name. 
+	 */
 	public String getPlayerName(){
 		return playerName;
 	}
-
-	public void setnewbalance(int balance, int fieldValue){
-		newbalance = balance + fieldValue;
+	
+	/** 
+	 * Method to calcute the new balance for the active player.
+	 */
+	public void changeBalance(int fieldValue){
+		account.changeBalance(fieldValue);
 	}
 	
-	public int Recievenewbalance(){
-		return newbalance;
+	/** 
+	 * Method to return the calculated balance.
+	 */
+	public int getBalance(){
+		return account.getBalance();
 	}
-	
-	public int tellBalance(){
-		return account.getbalance();
-	}
-	
 }
