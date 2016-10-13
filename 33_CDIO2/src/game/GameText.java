@@ -65,14 +65,14 @@ public class GameText {
 		return "Please enter the name of player " + number;
 	}
 	
+	/**
+	 * The method textWelcome creates a string with the game's welcome text.
+	 * @return String
+	 */
 	
-	
-	public static String introText(String playerName)
+	public static String textWelcome()
 	{	
-		String introText = "";
-		introText = "Welcome to the game 'A Tale of Tales' \n" + gameRules();
-		
-		return introText;
+		return "Welcome to the game 'A Tale of Tales' \n";
 	}
 	
 	/**
@@ -87,6 +87,10 @@ public class GameText {
 		return playerName + "has rolled a " + value[0] + " and a " + value[1];
 	}
 	
+	/**
+	 * The method gameRules returns a string which contains the game rules.
+	 * @return String
+	 */
 	public static String gameRules()
 	{
 		String gameRules = "";
