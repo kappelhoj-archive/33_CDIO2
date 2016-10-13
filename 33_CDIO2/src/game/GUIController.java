@@ -12,18 +12,18 @@ public class GUIController {
 	 * @param player1Name Player 1 name
 	 * @param player2Name Player 2 name
 	 */
-	GUIController(String player1Name,String player2Name) {
+	GUIController(String[] players) {
 		for (int i = 0; i < 11; i++)
 			fields[i] = new Street.Builder()
 			.setTitle(GameText.fieldTitles[i])
 			.setSubText(GameText.fieldSubText[i])
-			.setDescription(GameText.fieldDescription[i])
+			.setDescription(GameText.fieldShortDescription[i])
 			.build();
 
 		//Create the board with the 11 fields
 		GUI.create(fields);
-		GUI.addPlayer(player1Name,1000);
-		GUI.addPlayer(player2Name,1000);
+		GUI.addPlayer(players[0],1000);
+		GUI.addPlayer(players[1],1000);
 		GUI.setDice(3, 4);
 	}
 	 
