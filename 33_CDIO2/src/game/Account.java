@@ -2,15 +2,13 @@ package game;
 
 public class Account {
 
-	int Balance = 1000;
-	int fieldValue;
-	
+	private int Balance = 1000;
 	
 	public int getBalance(){
 		return Balance;
 	}
 
-	public void changeBalance(){
+	public void changeBalance(int fieldValue){
 		/**This part of the method simply adds or
 		 * subtracts the field value from the player' balance.
 		 */
@@ -38,11 +36,5 @@ public class Account {
 		else if (Balance + fieldValue > 3000) {
 			Balance = 3000;
 		}
-
-		else if (Balance > 3000){
-			Balance = 3000;
-		}
-
 	}
-
 }
