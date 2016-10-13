@@ -17,7 +17,7 @@ public class GUIController {
 			fields[i] = new Street.Builder()
 			.setTitle(GameText.fieldTitles[i])
 			.setSubText(GameText.fieldSubText[i])
-			.setDescription(GameText.fieldDescription[i])
+			.setDescription(GameText.fieldShortDescription[i])
 			.build();
 
 		//Create the board with the 11 fields
