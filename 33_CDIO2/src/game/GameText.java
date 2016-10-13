@@ -102,7 +102,15 @@ public class GameText {
 		return "A player has been randomly selected to start the game"; 
 	}
 	
-	
+	/**
+	 * The method turn returns a string which contains whose turn it is.
+	 * @param playerName The name of the player
+	 * @return String
+	 */
+	public static String turn(String playerName)
+	{
+		return "It is " + playerName + "'s turn";
+	}
 	
 	
 	/**
