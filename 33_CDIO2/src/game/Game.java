@@ -3,20 +3,34 @@ package game;
 public class Game 
 {
 	// turn = 0 for spiller 1 og turn = 1 for spiller 2.
-	public static int turn = 0;
+	public static int turn = (int) Math.round(Math.random());
 	//Er der nogen der har vundet?
 	public static boolean gameWon = false;
+	public static Player[] players;
+	public static TUI tui;
+	public static String[] playerNames;
+	public static GUIController controller;
+	public static Board board;
+	public static DiceCup diceCup;
 
 	public static void startGame()
 	{
-		Player[] players = new Player[2];
-		Guicon controller = new Guicon();
-		Board board = new Board();
-		DiceCup diceCup = new DiceCup();
+		players = new Player[2];
+		tui = new TUI();
+		playerNames=tui.intro();
+	    
+		controller = new GUIController(playerNames);
+		board = new Board();
+		diceCup = new DiceCup();
 
+		createPlayers(players, playerNames);	
 
-		turn = (int) Math.round(Math.random());	
-
+	}
+	
+	public static void createPlayers(Player[] players,String[] names)
+	{
+	    for(int i =0;i<names.length;i++)
+	    	players[i]=new Player(names[i]);
 	}
 	
 	public static extraTurn()
@@ -28,35 +42,24 @@ public class Game
 	}
 	
 	public static void turn(boolean extraTurn)
-	{
-		
+	{		
 		if(extraTurn)
 			return;
 		else {
 			turn = (turn + 1) % 2;
 			return;
-		}
-			
+		}				
+	}	
 		
-		
-		turn(extraTurn())
-		
-	}
-	
-	
-	
-	public static playTurn(Player[] players)
+	public static void playTurn(Player[] players)
 	{
 		
 		
-		
-		
 	}
-	
-	
-	
+			
 	public static void main(String[] args)
 	{
+		startGame();
 		while(!gameWon)
 		{
 			
@@ -65,10 +68,6 @@ public class Game
 			
 			
 		}
-
-
-
-
 	}
 
 }
