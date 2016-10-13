@@ -39,10 +39,10 @@ public class GameText {
 /*(211)*/	"In your journey, you happen to meet a friendly dwarf. He offers you a huge payment in return for helping him recover a large gold ingot lodged inside his goldmine. You spend the rest of the day working alongside the dwarf, and succesfully retrieve the shiny metal. The dwarfs rewards you a staggering 650 gold coins!"
 };
 	
-	public static String introText()
-	{
-		
-	}
+	//public static String introText()
+	//{
+	//	
+	//}
 	
 	public static String rollText(String playerName, int[] value)
 	{
