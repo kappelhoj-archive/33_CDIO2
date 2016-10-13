@@ -4,14 +4,14 @@ public class GameText {
 	public static String[] fieldTitles={
 /*(001)*/	"Tower",
 /*(002)*/	"Crater",
-/*(003)*/	"Palace gates",
+/*(003)*/	"Palace Gates",
 /*(004)*/	"Cold Desert",
-/*(005)*/	"Walled city",
+/*(005)*/	"Walled City",
 /*(006)*/	"Monastery",
-/*(007)*/	"Black cave",
-/*(008)*/	"Huts in the mountain",
+/*(007)*/	"Black Cave",
+/*(008)*/	"Huts in the Mountain",
 /*(009)*/	"The Werewall",
-/*(010)*/	"The pit",
+/*(010)*/	"The Pit",
 /*(011)*/	"Goldmine"};
 	public static String[] fieldSubText={
 /*(101)*/	"+250",
@@ -72,7 +72,7 @@ public class GameText {
 	
 	public static String textWelcome()
 	{	
-		return "Welcome to the game 'A Tale of Tales' \n";
+		return "Welcome to 'A Tale of Tales' \n";
 	}
 	
 	/**
@@ -97,8 +97,8 @@ public class GameText {
 		gameRules = "The game rules are as follows: \n";
 		gameRules = "- All players start with 1000 gold coins. \n"
 				  + "- The first player to achieve 3000 gold coins wins the game. \n"
-				  + "- A player receive or loss gold coins each turn. The amount depends on which field you landed on in the current turn. \n"
-				  + "- A player always lands on the field corresponding to the sum of the dice.";
+				  + "- A players funds are affected each turn. The amount depends on which field you land on in the current turn. \n"
+				  + "- A player always lands on the field number corresponding to the sum of the dice.";
 		return gameRules;
 	}
 	
