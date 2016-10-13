@@ -12,10 +12,10 @@ public class TUI
 	 */
 	public String[] intro()
 	{	
-		System.out.println(GameText.textWelcome());
+		System.out.println(GameText.welcomeText());
 		String[] playerNames = getPlayerNames();
-		System.out.println(GameText.gameRules());
-		System.out.println(GameText.firstTurn());
+		System.out.println(GameText.gameRulesText());
+		System.out.println(GameText.firstTurnText());
 	
 		return playerNames;
 	}
@@ -29,10 +29,10 @@ public class TUI
 	{
 		Scanner keyb = new Scanner(System.in);
 		
-		System.out.println(GameText.enterPlayerName(1));
+		System.out.println(GameText.enterPlayerNameText(1));
 		String playerOne = keyb.nextLine();
 		
-		System.out.println(GameText.enterPlayerName(2));
+		System.out.println(GameText.enterPlayerNameText(2));
 		String playerTwo = keyb.nextLine();
 		
 		String[] playerNames = {playerOne, playerTwo}; 

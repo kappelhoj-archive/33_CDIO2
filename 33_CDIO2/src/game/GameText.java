@@ -4,14 +4,14 @@ public class GameText {
 	public static String[] fieldTitles={
 /*(001)*/	"Tower",
 /*(002)*/	"Crater",
-/*(003)*/	"Palace gates",
+/*(003)*/	"Palace Gates",
 /*(004)*/	"Cold Desert",
-/*(005)*/	"Walled city",
+/*(005)*/	"Walled City",
 /*(006)*/	"Monastery",
-/*(007)*/	"Black cave",
-/*(008)*/	"Huts in the mountain",
+/*(007)*/	"Black Cave",
+/*(008)*/	"Huts in the Mountain",
 /*(009)*/	"The Werewall",
-/*(010)*/	"The pit",
+/*(010)*/	"The Pit",
 /*(011)*/	"Goldmine"};
 	public static String[] fieldSubText={
 /*(101)*/	"+250",
@@ -60,7 +60,7 @@ public class GameText {
 	 * @return String
 	 */
 	
-	public static String enterPlayerName(int number)
+	public static String enterPlayerNameText(int number)
 	{
 		return "Please enter the name of player " + number;
 	}
@@ -70,9 +70,9 @@ public class GameText {
 	 * @return String
 	 */
 	
-	public static String textWelcome()
+	public static String welcomeText()
 	{	
-		return "Welcome to the game 'A Tale of Tales' \n";
+		return "Welcome to 'A Tale of Tales' \n";
 	}
 	
 	
@@ -80,14 +80,14 @@ public class GameText {
 	 * The method gameRules returns a string which contains the game rules.
 	 * @return String
 	 */
-	public static String gameRules()
+	public static String gameRulesText()
 	{
 		String gameRules = "";
 		gameRules = "The game rules are as follows: \n";
 		gameRules = "- All players start with 1000 gold coins. \n"
 				  + "- The first player to achieve 3000 gold coins wins the game. \n"
-				  + "- A player receive or loss gold coins each turn. The amount depends on which field you landed on in the current turn. \n"
-				  + "- A player always lands on the field corresponding to the sum of the dice.";
+				  + "- A players funds are affected each turn. The amount depends on which field you land on in the current turn. \n"
+				  + "- A player always lands on the field number corresponding to the sum of the dice.";
 		return gameRules;
 	}
 	
@@ -97,7 +97,7 @@ public class GameText {
 	 * @param playerName The name of the player
 	 * @return String
 	 */
-	public static String firstTurn()
+	public static String firstTurnText()
 	{
 		return "A player has been randomly selected to start the game"; 
 	}
@@ -107,11 +107,20 @@ public class GameText {
 	 * @param playerName The name of the player
 	 * @return String
 	 */
-	public static String turn(String playerName)
+	public static String turnText(String playerName)
 	{
 		return "It is " + playerName + "'s turn";
 	}
 	
+	/**
+	 * The method extraTurn returns a string which tell who has got an extra turn.
+	 * @param playerName The name of the player
+	 * @return String
+	 */
+	public static String extraTurnText(String playerName)
+	{
+		return playerName + " has gained an extra turn";
+	}
 	
 	/**
 	 * The method rollText returns a String which contains what a particular player has rolled with the dice.
@@ -124,4 +133,13 @@ public class GameText {
 		return playerName + "has rolled a " + value[0] + " and a " + value[1];
 	}
 	
+	/**
+	 * The method winnerText returns a String which contains which player has won the game
+	 * @param playerName The name of the player.
+	 * @return String
+	 */
+	public static String winnerText(String playerName)
+	{
+		return "Congratulations " + playerName + " has won the game!";
+	}
 }
