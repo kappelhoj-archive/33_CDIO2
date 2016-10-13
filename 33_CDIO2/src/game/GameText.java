@@ -53,10 +53,27 @@ public class GameText {
 /*(311)*/	"A Goldmine"
 			};
 	
-//	public static String introText()
-//	{	
-//		return introText;
-//	}
+	
+	/**
+	 * The method enterPlayerNames returns a string Which asks the players to enter their names.
+	 * @param  The number of the player
+	 * @return String
+	 */
+	
+	public static String enterPlayerName(int number)
+	{
+		return "Please enter the name of player " + number;
+	}
+	
+	
+	
+	public static String introText(String playerName)
+	{	
+		String introText = "";
+		introText = "Welcome to the game 'A Tale of Tales' \n" + gameRules();
+		
+		return introText;
+	}
 	
 	/**
 	 * The method rollText returns a String which contains what a particular player has rolled with the dice.
