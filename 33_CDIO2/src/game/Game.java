@@ -8,7 +8,6 @@ public class Game
 	public static boolean gameWon = false;
 	public static Player[] players;
 	public static TUI tui;
-	public static String[] playerNames;
 	public static GUIController controller;
 	public static Board board;
 	public static DiceCup diceCup;
@@ -17,8 +16,8 @@ public class Game
 	{
 		players = new Player[2];
 		tui = new TUI();
-		playerNames=tui.intro();
-	    
+		String[] playerNames=tui.intro();
+
 		controller = new GUIController(playerNames);
 		board = new Board();
 		diceCup = new DiceCup();
@@ -26,19 +25,25 @@ public class Game
 		createPlayers(players, playerNames);	
 
 	}
-	
-	public static void createPlayers(Player[] players,String[] names)
+
+	public static void createPlayers(Player[] players, String[] names)
 	{
-	    for(int i =0;i<names.length;i++)
-	    	players[i]=new Player(names[i]);
+		for(int i =0;i<names.length;i++)
+			players[i]=new Player(names[i]);
 	}
-	
+
 	public static extraTurn()
 	{
-		
-		
-		
-		
+
+
+
+
+	}
+
+	public static int[] playDice()
+	{
+		diceCup.shakeCup();
+		return diceCup.getDiceValue();
 	}
 	
 	public static void turn(boolean extraTurn)
@@ -50,23 +55,23 @@ public class Game
 			return;
 		}				
 	}	
-		
+
 	public static void playTurn(Player[] players)
 	{
-		
-		
+		int[] currentDice = playDice();
+		board.get
 	}
-			
+
 	public static void main(String[] args)
 	{
 		startGame();
 		while(!gameWon)
 		{
+			turn(false);
 			
-			
-			
-			
-			
+
+
+
 		}
 	}
 

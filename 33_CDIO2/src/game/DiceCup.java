@@ -12,7 +12,7 @@ public class DiceCup {
 		d2 = new Die();
 	}
 	
-	public void rollDice()
+	public void shakeCup()
 	{
 		d1.rollDie();
 		d2.rollDie();
