@@ -70,7 +70,7 @@ public class Game
 		{
 			playTurn();
 		}
-		controller.endGame(players[turn]);
+		controller.endGame(players[turn].getPlayerName());
 	}
 
 }
