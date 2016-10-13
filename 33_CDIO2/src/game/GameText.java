@@ -130,7 +130,7 @@ public class GameText {
 	 */
 	public static String rollText(String playerName, int[] value)
 	{
-		return playerName + "has rolled a " + value[0] + " and a " + value[1] + "."+ "\n";
+		return playerName + " has rolled a " + value[0] + " and a " + value[1] + "."+ "\n";
 	}
 	
 	/**
