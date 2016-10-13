@@ -1,7 +1,7 @@
 package game;
 import game.Die;
 public class DiceCup {
-
+//dicecup
 	private Die d1;
 	private Die d2;
 	
