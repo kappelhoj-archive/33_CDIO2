@@ -112,6 +112,15 @@ public class GameText {
 		return "It is " + playerName + "'s turn";
 	}
 	
+	/**
+	 * The method extraTurn returns a string which tell who has got an extra turn.
+	 * @param playerName The name of the player
+	 * @return String
+	 */
+	public static String extraTurn(String playerName)
+	{
+		return playerName + " has gained an extra turn";
+	}
 	
 	/**
 	 * The method rollText returns a String which contains what a particular player has rolled with the dice.
