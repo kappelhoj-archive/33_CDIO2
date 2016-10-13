@@ -9,4 +9,14 @@ public class Field {
 		this.gold = gold;
 		this.extraTurn = extraTurn;
 	}
+	
+	public int getGold()
+	{
+		return gold;
+	}
+	
+	public boolean extraTurn()
+	{
+		return extraTurn;
+	}
 }
