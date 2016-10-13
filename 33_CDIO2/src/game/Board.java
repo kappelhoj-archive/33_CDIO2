@@ -7,4 +7,10 @@ public class Board {
 	{
 		this.fields = fields;
 	}
+	
+
+	public Field[] getFields()
+	{
+		return fields;
+	}
 }
