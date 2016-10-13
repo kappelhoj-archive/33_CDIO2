@@ -40,8 +40,10 @@ public class GUIController {
 	private void changeBalanceTo(String playerName,int balance){
 		GUI.setBalance(playerName, balance);
 	} 
-	public void getTurn(String playerName,int playerBalance,int playerPosition){
+	public void getTurn(String playerName,int playerBalance,int playerPosition,int[] currentDice){	
 		
+	}
+    public void endGame(String playerName){	
 		
 	}
 	

@@ -59,7 +59,12 @@ public class Game
 	public static void playTurn(Player[] players)
 	{
 		int[] currentDice = playDice();
-		board.get
+		int sum = currentDice[0] + currentDice[1];
+
+		players[turn].changeBalance(board.getFieldGold(sum - 2));
+		if(players[turn].getBalance() == 3000)
+			gameWon = true;
+		controller.getTurn(players[turn].getPlayerName(), players[turn].getBalance(), sum-2, currentDice);
 	}
 
 	public static void main(String[] args)
