@@ -53,12 +53,12 @@ public class GameText {
 	
 	
 	
-	public static String introText(String playerName)
+	public static String textWelcome()
 	{	
-		String introText = "";
-		introText = "Welcome to the game 'A Tale of Tales' \n" + gameRules();
+		String textWelcome = "";
+		textWelcome = "Welcome to the game 'A Tale of Tales' \n";
 		
-		return introText;
+		return textWelcome;
 	}
 	
 	/**
