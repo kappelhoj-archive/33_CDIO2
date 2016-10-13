@@ -6,19 +6,23 @@ public class TUI
 {
 
 	/**
-	 * Method getPlayerNames Ask the players of their names.
+	 * Method intro prints the game intro to the console. This intro includes asking the players 
+	 * for their names.
 	 * @return return the name of the players as a string array
 	 */
 	public String[] intro()
-	{
-		
-		
+	{	
+		System.out.println(GameText.textWelcome());
 		String[] playerNames = getPlayerNames();
-		
-		
-		
+		System.out.println(GameText.gameRules());
+	
 		return playerNames;
 	}
+	
+	/**
+	 * Method getPlayerNames asks the player for their names.
+	 * @return the name of the players as a string array.
+	 */
 	
 	public String[] getPlayerNames()
 	{
