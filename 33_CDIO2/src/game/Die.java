@@ -1,21 +1,20 @@
 package game;
 
-
 public class Die {
 
 	public final int MAX_VALUE;
 	private int value;
 
 	/**
-	 * Opretter en terning med 6 sider, og en tilfældig værdi fra 1-6.
+	 * Constructor Die creates a 6 sided die, with a random face value between 1-6.
 	 */
 	public Die() {
 		MAX_VALUE = 6;
 		value = rollDie();
 	}
 	/**
-	 * Opretter en terning med n sider.
-	 * @param n antal sider på terningen.
+	 * Constructor Die creates a n-sided die, with a random face value between 1-6.
+	 * @param The amount of sides you want the die to have.
 	 */
 	public Die(int n) {
 		MAX_VALUE = n;
@@ -23,35 +22,33 @@ public class Die {
 	}
 
 	/**
-	 * Denne funktion slår med terningen og gemmer slaget i en variabel.
-	 * 
+	 * Method rollDie sets the face value of the die to a random integer between 1-6.
 	 * @return Retunerer terningens værdi (int).
 	 */
 	public int rollDie() {
-		// Generere en tilfældig værdi mellem 1 og 6.
+		// generates a random value between 1-6.
 		value = (int) (Math.random() * MAX_VALUE + 1);
 		return value;
 	}
 
 	/**
-	 * Henter værdien af terningen.
-	 * 
-	 * @return Den nuværende værdi af terningen.
+	 * Method getValue returns the face value of the die.
+	 * @return The current face value of the die.
 	 */
 	public int getValue() {
 		return value;
 	}
 
 	/**
-	 * Returnere en string der beskriver værdien af terningen.
+	 * Method toString returns a string representation of the die.
 	 */
 	public String toString() {
 		return "The value of the die is: " + value;
 	}
 	
 	/**
-	 * Sætter værdien af terningen.
-	 * OBS: Bruges kun til at teste med. Er derfor ikke i diagrammerne.
+	 * Method setValue sets the face value of the die.
+	 * NB: This method is only used when testing the Die class and is therefore not seen in the diagrams.
 	 */
 	public void setValue(int value)
 	{
