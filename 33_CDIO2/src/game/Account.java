@@ -3,8 +3,9 @@ package game;
 public class Account {
 
 	int Balance = 1000;
-	int fieldValue = 5;
-
+	int fieldValue;
+	
+	
 	public int getBalance(){
 		return Balance;
 	}
@@ -30,16 +31,18 @@ public class Account {
 		else if (Balance + fieldValue < 0){
 			Balance = 0;
 		}
-		
+
 		/**This part of the method recognizes if the player already has 3000 gold coins,
 		 * it sets the balance to 3000 again.
 		 */
 		else if (Balance + fieldValue > 3000) {
 			Balance = 3000;
 		}
-		
+
 		else if (Balance > 3000){
 			Balance = 3000;
 		}
+
 	}
+
 }
