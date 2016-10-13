@@ -66,7 +66,7 @@ public class GameText {
 	}
 	
 	/**
-	 * The method textWelcome creates a string with the game's welcome text.
+	 * The method textWelcome returns a string which contains the welcome text of the game.
 	 * @return String
 	 */
 	
@@ -75,17 +75,6 @@ public class GameText {
 		return "Welcome to the game 'A Tale of Tales' \n";
 	}
 	
-	/**
-	 * The method rollText returns a String which contains what a particular player has rolled with the dice.
-	 * @param playerName The name of the player (String).
-	 * @param value A array of two dice values (Int[])
-	 * @return String rollText
-	 */
-	
-	public static String rollText(String playerName, int[] value)
-	{
-		return playerName + "has rolled a " + value[0] + " and a " + value[1];
-	}
 	
 	/**
 	 * The method gameRules returns a string which contains the game rules.
@@ -102,5 +91,37 @@ public class GameText {
 		return gameRules;
 	}
 	
+	/**
+	 * The firstTurn method returns a string which contains which player has 
+	 * been randomly selected to start the game. 
+	 * @param playerName The name of the player
+	 * @return String
+	 */
+	public static String firstTurn()
+	{
+		return "A player has been randomly selected to start the game"; 
+	}
+	
+	/**
+	 * The method turn returns a string which contains whose turn it is.
+	 * @param playerName The name of the player
+	 * @return String
+	 */
+	public static String turn(String playerName)
+	{
+		return "It is " + playerName + "'s turn";
+	}
+	
+	
+	/**
+	 * The method rollText returns a String which contains what a particular player has rolled with the dice.
+	 * @param playerName The name of the player (String).
+	 * @param value A array of two dice values (Int[])
+	 * @return String 
+	 */
+	public static String rollText(String playerName, int[] value)
+	{
+		return playerName + "has rolled a " + value[0] + " and a " + value[1];
+	}
 	
 }

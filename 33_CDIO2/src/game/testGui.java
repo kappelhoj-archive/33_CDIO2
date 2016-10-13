@@ -4,7 +4,8 @@ public class testGui {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		GUIController guicon=new GUIController("Bob","Børge");
+		String [] array={"Bob","Børge"};
+		GUIController guicon=new GUIController(array);
 		guicon.movePlayer("bob",2);
 		guicon.movePlayer("bob",3);
 		guicon.movePlayer("bob",4);
