@@ -62,7 +62,7 @@ public class GameText {
 	
 	public static String enterPlayerNameText(int number)
 	{
-		return "Please enter the name of player " + number + "\n";
+		return "Please enter the name of player " + number;
 	}
 	
 	/**
@@ -84,7 +84,8 @@ public class GameText {
 	{
 		String gameRules = "";
 		gameRules = "The game rules are as follows: \n";
-		gameRules = "- All players start with 1000 gold coins. \n"
+		gameRules = gameRules 
+			      + "- All players start with 1000 gold coins. \n"
 				  + "- The first player to achieve 3000 gold coins wins the game. \n"
 				  + "- A players funds are affected each turn. The amount depends on which field you land on in the current turn. \n"
 				  + "- A player always lands on the field number corresponding to the sum of the dice. \n";
