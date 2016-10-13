@@ -7,7 +7,7 @@ public class Player {
 	private String playerName;
 	private Account account = new Account();
 	
-	int NewBalance;
+	int newbalance;
 	
 	public Player(String playerName)
 	{
@@ -18,16 +18,16 @@ public class Player {
 		return playerName;
 	}
 
-	public void setNewBalance(int Balance, int fieldValue){
-		NewBalance = Balance + fieldValue;
+	public void setnewbalance(int balance, int fieldValue){
+		newbalance = balance + fieldValue;
 	}
 	
-	public int RecieveNewBalance(){
-		return NewBalance;
+	public int Recievenewbalance(){
+		return newbalance;
 	}
 	
 	public int tellBalance(){
-		return account.getBalance();
+		return account.getbalance();
 	}
 	
 }
