@@ -4,14 +4,14 @@ public class GameText {
 	public static String[] fieldTitles={
 /*(001)*/	"Tower",
 /*(002)*/	"Crater",
-/*(003)*/	"Palace gates",
+/*(003)*/	"Palace Gates",
 /*(004)*/	"Cold Desert",
-/*(005)*/	"Walled city",
+/*(005)*/	"Walled City",
 /*(006)*/	"Monastery",
-/*(007)*/	"Black cave",
-/*(008)*/	"Huts in the mountain",
+/*(007)*/	"Black Cave",
+/*(008)*/	"Huts in the Mountain",
 /*(009)*/	"The Werewall",
-/*(010)*/	"The pit",
+/*(010)*/	"The Pit",
 /*(011)*/	"Goldmine"};
 	public static String[] fieldSubText={
 /*(101)*/	"+250",
@@ -53,15 +53,94 @@ public class GameText {
 /*(311)*/	"A Goldmine filled with gold."
 			};
 	
-	//public static String introText()
-	//{
-	//	
-	//}
 	
-	public static String rollText(String playerName, int[] value)
+	/**
+	 * The method enterPlayerNames returns a string Which asks the players to enter their names.
+	 * @param  The number of the player
+	 * @return String
+	 */
+	
+	public static String enterPlayerNameText(int number)
 	{
-		return playerName + "has rolled a " + value[0] + " and a " + value[1];
+		return "Please enter the name of player " + number;
+	}
+	
+	/**
+	 * The method textWelcome returns a string which contains the welcome text of the game.
+	 * @return String
+	 */
+	
+	public static String welcomeText()
+	{	
+		return "Welcome to 'A Tale of Tales' \n";
 	}
 	
 	
+	/**
+	 * The method gameRules returns a string which contains the game rules.
+	 * @return String
+	 */
+	public static String gameRulesText()
+	{
+		String gameRules = "";
+		gameRules = "The game rules are as follows: \n";
+		gameRules = gameRules 
+			      + "- All players start with 1000 gold coins. \n"
+				  + "- The first player to achieve 3000 gold coins wins the game. \n"
+				  + "- A players funds are affected each turn. The amount depends on which field you land on in the current turn. \n"
+				  + "- A player always lands on the field number corresponding to the sum of the dice. \n";
+		return gameRules;
+	}
+	
+	/**
+	 * The firstTurn method returns a string which contains which player has 
+	 * been randomly selected to start the game. 
+	 * @param playerName The name of the player
+	 * @return String
+	 */
+	public static String firstTurnText()
+	{
+		return "A player has been randomly selected to start the game. \n"; 
+	}
+	
+	/**
+	 * The method turn returns a string which contains whose turn it is.
+	 * @param playerName The name of the player
+	 * @return String
+	 */
+	public static String turnText(String playerName)
+	{
+		return "It is " + playerName + "'s turn \n";
+	}
+	
+	/**
+	 * The method extraTurn returns a string which tell who has got an extra turn.
+	 * @param playerName The name of the player
+	 * @return String
+	 */
+	public static String extraTurnText(String playerName)
+	{
+		return playerName + " has gained an extra turn \n";
+	}
+	
+	/**
+	 * The method rollText returns a String which contains what a particular player has rolled with the dice.
+	 * @param playerName The name of the player (String).
+	 * @param value A array of two dice values (Int[])
+	 * @return String 
+	 */
+	public static String rollText(String playerName, int[] value)
+	{
+		return playerName + " has rolled a " + value[0] + " and a " + value[1] + "."+ "\n";
+	}
+	
+	/**
+	 * The method winnerText returns a String which contains which player has won the game
+	 * @param playerName The name of the player.
+	 * @return String
+	 */
+	public static String winnerText(String playerName)
+	{
+		return "Congratulations " + playerName + " has won the game! \n";
+	}
 }

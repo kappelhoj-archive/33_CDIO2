@@ -1,5 +1,8 @@
 package game;
 
+import java.awt.Color;
+
+import desktop_codebehind.Car;
 import desktop_fields.Field;
 import desktop_fields.Street;
 import desktop_resources.GUI;
@@ -21,12 +24,29 @@ public class GUIController {
 			.build();
 
 		//Create the board with the 11 fields
-		GUI.create(fields);
-		GUI.addPlayer(players[0],1000);
-		GUI.addPlayer(players[1],1000);
+		GUI.create(fields);	
+		Car[] cars=createCars();
+		GUI.addPlayer(players[0],1000,cars[0]);
+		GUI.addPlayer(players[1],1000,cars[1]);
 		GUI.setDice(3, 4);
 	}
-	 
+	
+	 private Car[] createCars(){
+		 Car[] carArray =new Car[2];
+			carArray[0]=new Car.Builder()
+					.primaryColor(Color.BLUE)
+					.secondaryColor(Color.WHITE)
+					.typeUfo()
+					.patternFill()
+					.build();
+			carArray[1]=new Car.Builder()
+					.primaryColor(Color.RED)
+					.secondaryColor(Color.WHITE)
+					.typeUfo()
+					.patternFill()
+					.build();
+			return carArray;
+	 }
 	/**
 	 * Move a player to a Field
 	 * @param playerName Player name.
@@ -36,15 +56,28 @@ public class GUIController {
 		GUI.removeAllCars(playerName);
 		GUI.setCar(position, playerName);
 	}
+	public void startTurn(String playerName,boolean extraTurn){
+		if(extraTurn)
+			GUI.getUserButtonPressed(GameText.extraTurnText(playerName),"Roll");
+		else
+			GUI.getUserButtonPressed(GameText.turnText(playerName),"Roll");
+	}
 	
-	private void changeBalanceTo(String playerName,int balance){
-		GUI.setBalance(playerName, balance);
-	} 
 	public void getTurn(String playerName,int playerBalance,int playerPosition,int[] currentDice){	
+
+		GUI.setDice(currentDice[0],1+varians(),5+varians(), currentDice[1],3+varians(),7+varians());
+		movePlayer(playerName,playerPosition+1);
+		GUI.getUserButtonPressed(GameText.rollText(playerName, currentDice)+"\n"+GameText.fieldDescription[playerPosition],"Ok");
+		GUI.setBalance(playerName, playerBalance);
+		
 		
 	}
+	public int varians(){
+		return (int)(Math.round(Math.random()*2-1));
+	}
+	
     public void endGame(String playerName){	
-		
+    	GUI.getUserButtonPressed(GameText.winnerText(playerName),"X"); 
 	}
 	
 	
