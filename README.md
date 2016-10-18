@@ -1,5 +1,6 @@
 # CDIO Del 2 - Gruppe 33
 -----------------------------------
+Dette er anden del aflevering i fagene 02312, 02313 og 02315
 
 ##Gruppe medlemmer
 
