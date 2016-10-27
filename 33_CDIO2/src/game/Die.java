@@ -29,7 +29,7 @@ public class Die {
 	public int rollDie() {
 		// generates a random value between 1-6.
 		value = diceValues[index];
-		index=index++;
+		index++;
 		index=index%diceValues.length;
 		return value;
 	}
