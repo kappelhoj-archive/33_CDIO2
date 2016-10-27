@@ -14,6 +14,7 @@ public class Account {
 
 	/**
 	 * Method to calculate the new balance based on the int fieldValue.
+	 * @param Field's gold value.
 	 */
 	public boolean changeBalance(int fieldValue) {
 		/**
