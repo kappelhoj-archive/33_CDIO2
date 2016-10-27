@@ -3,7 +3,11 @@ package game;
 public class Account {
 
 	private int balance = 1000;
-
+	
+	/**
+	 * Method to getBalance returns the balance of the Account.
+	 * @return Balance value of an account.
+	 */
 	public int getBalance() {
 		return balance;
 	}
@@ -16,7 +20,6 @@ public class Account {
 		 * This part of the method simply adds or subtracts the field value from
 		 * the player' balance.
 		 */
-
 		balance = balance + fieldValue;
 		if (balance < 0) {
 			balance = 0;
