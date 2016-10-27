@@ -66,7 +66,7 @@ public class GameText {
 	}
 	
 	/**
-	 * The method textWelcome returns a string which contains the welcome text of the game.
+	 * The method welcomeText returns a string which contains the welcome text of the game.
 	 * @return String
 	 */
 	
