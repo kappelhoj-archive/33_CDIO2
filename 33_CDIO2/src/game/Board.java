@@ -31,6 +31,7 @@ public class Board {
 	
 	/**
 	 * Method getFieldGold returns the gold value of a specific field.
+	 * @param Field's index in the array.
 	 * @return Gold value of a field.
 	 */
 	public int getFieldGold(int fieldIndex)
@@ -40,6 +41,7 @@ public class Board {
 	
 	/**
 	 * Method getFieldExtraTurn returns the extraTurn value of a specific field.
+	 * @param Field's index in the array.
 	 * @return Extra turn value of a field.
 	 */
 	public boolean getFieldExtraTurn(int fieldIndex)
