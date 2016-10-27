@@ -11,7 +11,7 @@ public class Die {
 	 */
 	public Die() {
 		MAX_VALUE = 6;
-		value = 1;
+		//value = rollDie();
 	}
 	/**
 	 * Constructor Die creates a n-sided die, with a random face value between 1-6.
@@ -19,10 +19,7 @@ public class Die {
 	 */
 	public Die(int n) {
 		MAX_VALUE = n;
-		value = diceValues[index];
-		index=index++;
-		index=index%diceValues.length;
-				
+		//value = rollDie();
 	}
 
 	/**
@@ -31,7 +28,9 @@ public class Die {
 	 */
 	public int rollDie() {
 		// generates a random value between 1-6.
-		value = (int) (Math.random() * MAX_VALUE + 1);
+		value = diceValues[index];
+		index=index++;
+		index=index%diceValues.length;
 		return value;
 	}
 
