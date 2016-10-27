@@ -26,7 +26,7 @@ public class DiceCup
 
 	/**
 	 * Method getDiceValue returns the value of the rolled dice as a integer array.
-	 * @return int[]
+	 * @return Array with the two dice values.
 	 */
 	public int[] getDiceValue()
 	{
