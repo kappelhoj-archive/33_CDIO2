@@ -9,7 +9,7 @@ import desktop_resources.GUI;
 
 public class GUIController {
 	Field[] fields = new Field[11];
-
+ 
 	/**
 	 * Intialize the board on the screen
 	 * @param players
