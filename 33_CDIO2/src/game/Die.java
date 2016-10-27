@@ -1,7 +1,8 @@
 package game;
 
 public class Die {
-
+	private static int index=0;
+	private static int[] diceValues={1,1,2,1,3,1,4,1,5,1,6,1,6,2,6,3,6,4,6,5,6,6};
 	public final int MAX_VALUE;
 	private int value;
 
@@ -10,7 +11,7 @@ public class Die {
 	 */
 	public Die() {
 		MAX_VALUE = 6;
-		value = rollDie();
+		value = 1;
 	}
 	/**
 	 * Constructor Die creates a n-sided die, with a random face value between 1-6.
@@ -18,7 +19,10 @@ public class Die {
 	 */
 	public Die(int n) {
 		MAX_VALUE = n;
-		value = rollDie();
+		value = diceValues[index];
+		index=index++;
+		index=index%diceValues.length;
+				
 	}
 
 	/**
