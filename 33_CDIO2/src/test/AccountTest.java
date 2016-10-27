@@ -1,8 +1,8 @@
 package test;
+
 import game.Account;
 
 import static org.junit.Assert.*;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,12 +20,12 @@ Account acc;
 	@After
 	public void tearDown () throws Exception
 	{
-
 		acc = null;
 	}
 	
 	
 	/**
+	 * TEST ID: UA01
 	 * Tests if the Account Balance
 	 * method correctly adds Balance and
 	 * the Field Value.
@@ -41,6 +41,7 @@ Account acc;
 	
 	
 	/**
+	 * TEST ID: UA02
 	 * Tests if the Account Balance
 	 * method correctly subtracts Balance and
 	 * the Field Value.
@@ -57,6 +58,7 @@ Account acc;
 
 	
 	/**
+	 * TEST ID: UA03
 	 * Tests if the Account Balance
 	 * method correctly does not exceed 3000
 	 */
@@ -72,6 +74,7 @@ Account acc;
 	
 	
 	/**
+	 * TEST ID: UA04
 	 * Tests if the Account Balance
 	 * method correctly does not go below 0.
 	 */
@@ -86,6 +89,7 @@ Account acc;
 	}
 	
 	/**
+	 * TEST ID: UA05
 	 * Tests how the Account Balance
 	 * method handles an incredibly large number,
 	 * and if it correctly resets the Balance to 0.
