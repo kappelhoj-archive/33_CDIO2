@@ -92,7 +92,6 @@ public class GUIController {
 		//Change the balance.
 		GUI.setBalance(playerName, playerBalance);
 		
-		
 	}
 	/**
 	 * Gives a random value between -1 and 1. Used to make the dice rolls appear random.
