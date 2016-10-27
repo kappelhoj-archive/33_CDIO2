@@ -75,7 +75,7 @@ public class Game {
 		int[] currentDice = playDice();
 		int sum = currentDice[0] + currentDice[1];
 
-		players[turn].changeAccountBalance(board.getFieldGold(sum));
+		players[turn].changeAccountBalance(board.getFieldGold(sum - 2));
 		controller.getTurn(players[turn].getPlayerName(), players[turn].getAccountBalance(), sum, currentDice);
 		if (players[turn].getAccountBalance() == 3000) {
 			gameWon = true;
