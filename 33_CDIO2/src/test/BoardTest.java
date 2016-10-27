@@ -21,6 +21,7 @@ public class BoardTest {
 	}
 	
 	/* 
+	 * Test ID: UB01
 	 * Tests if the method getFieldGold returns the correct gold value for
 	 * a specific field.
 	 */
@@ -35,6 +36,7 @@ public class BoardTest {
 	}
 	
 	/*
+	 * Test ID: UB02
 	 * Tests if the method getFieldGold returns the correct gold value for
 	 * all the fields on the board.
 	 */
@@ -52,6 +54,7 @@ public class BoardTest {
 	}
 	
 	/*
+	 * Test ID: UB03
 	 * Tests if the method getFieldExtraTurn returns the correct extraTurn value.
 	 */
 	@Test
@@ -64,6 +67,7 @@ public class BoardTest {
 	}
 	
 	/*
+	 * Test ID: UB04
 	 * Tests if the method getFieldExtraTurn returns the correct extraTurn value
 	 * for all the fields on the board.
 	 */
