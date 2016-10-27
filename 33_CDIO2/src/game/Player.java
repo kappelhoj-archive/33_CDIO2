@@ -8,7 +8,8 @@ public class Player {
 	private Account account = new Account();
 
 	/** 
-	 * Method to set the players name to the input playername.
+	 * Player constructor sets the player's name to the parameter value.
+	 * @param Player's name.
 	 */
 	public Player(String playerName)
 	{
@@ -16,23 +17,26 @@ public class Player {
 	}
 	
 	/** 
-	 * Method to return the individual players name. 
+	 * Method to return the individual players name.
+	 * @return Player's name. 
 	 */
 	public String getPlayerName(){
 		return playerName;
 	}
 	
 	/** 
-	 * Method to calcute the new balance for the active player.
+	 * Method changeAccountBalance changes the account balance value of the player.
+	 * @param Field's gold value.
 	 */
-	public void changeBalance(int fieldValue){
+	public void changeAccountBalance(int fieldValue){
 		account.changeBalance(fieldValue);
 	}
 	
 	/** 
-	 * Method to return the calculated balance.
+	 * Method getAccountBalance returns the player's account balance.
+	 * @return Returns the account balance value of the player.
 	 */
-	public int getBalance(){
+	public int getAccountBalance(){
 		return account.getBalance();
 	}
 }

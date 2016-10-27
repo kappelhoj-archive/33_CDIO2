@@ -17,7 +17,8 @@ public class Die
 	}
 	/**
 	 * Constructor Die creates a n-sided die, with a random face value between 1-n.
-	 * If the parameter gives is less than 1, the Constructors constructs a 6-sided die.
+	 * If the parameter gives is less than 1, the constructor constructs a 6-sided die.
+	 * If the parameter overflows, the constructor constructs a 6-sided die.
 	 * @param The amount of sides you want the die to have.
 	 */
 	public Die(int n) {
