@@ -1,6 +1,7 @@
 package game;
 
-public class Die {
+public class Die 
+{
 	private static int index=0;
 	private static int[] diceValues={1,1,2,1,3,1,4,1,5,1,6,1,6,2,6,3,6,4,6,5,6,6};
 	public final int MAX_VALUE;
@@ -9,25 +10,36 @@ public class Die {
 	/**
 	 * Constructor Die creates a 6 sided die, with a random face value between 1-6.
 	 */
-	public Die() {
+	public Die() 
+	{
 		MAX_VALUE = 6;
 		//value = rollDie();
 	}
 	/**
-	 * Constructor Die creates a n-sided die, with a random face value between 1-6.
+	 * Constructor Die creates a n-sided die, with a random face value between 1-n.
+	 * If the parameter gives is less than 1, the Constructors constructs a 6-sided die.
 	 * @param The amount of sides you want the die to have.
 	 */
 	public Die(int n) {
-		MAX_VALUE = n;
-		//value = rollDie();
+		if ( n < 1)
+		{
+			MAX_VALUE = 6;
+			//value = rollDie();
+		}
+		else
+		{
+			MAX_VALUE = n;
+			//value = rollDie();
+		}
 	}
 
 	/**
-	 * Method rollDie sets the face value of the die to a random integer between 1-6.
+	 * Method rollDie sets the face value of the die to a random integer between 1-MAX_VALUE.
 	 * @return Retunerer terningens værdi (int).
 	 */
-	public int rollDie() {
-		// generates a random value between 1-6.
+	public int rollDie() 
+	{
+		// generates a random value between 1-MAX_VALUE.
 		value = diceValues[index];
 		index++;
 		index=index%diceValues.length;
@@ -38,14 +50,16 @@ public class Die {
 	 * Method getValue returns the face value of the die.
 	 * @return The current face value of the die.
 	 */
-	public int getValue() {
+	public int getValue() 
+	{
 		return value;
 	}
 
 	/**
 	 * Method toString returns a string representation of the die.
 	 */
-	public String toString() {
+	public String toString() 
+	{
 		return "The value of the die is: " + value;
 	}
 	
