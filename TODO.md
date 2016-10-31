@@ -11,7 +11,7 @@
 ## Hvad mangler
 * Design
 * Implementering
-* Use-case diagram kommentar
+* Use-case diagram kommentarer
 * Test
 * Konklusion
 * System krav - nyt afsnit
