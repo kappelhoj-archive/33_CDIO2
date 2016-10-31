@@ -13,6 +13,6 @@
 * Implementering
 * Test
 * Konklusion
-* System krav - nyt afsnit
 * Stort klasse diagram - Arvid
+* Formelle test bilag- Arvid
 
