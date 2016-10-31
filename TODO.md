@@ -1,6 +1,6 @@
-## To do list
+# To do list
 
-# Hvad har vi lavet
+## Hvad har vi lavet
 * introduktion
 * Problemformulering
 * Krav specifikation
@@ -8,10 +8,10 @@
 * SSD
 * Formelle test
 
-# Hvad mangler
+## Hvad mangler
 * Design
 * Implementering
 * Use-case diagram kommentar
 * Test
 * Konklusion
-* System krav
+* System krav - nyt afsnit
