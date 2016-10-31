@@ -70,9 +70,9 @@ public class GUIController {
 	 */
 	public void startTurn(String playerName,boolean extraTurn){
 		if(extraTurn)
-			GUI.getUserButtonPressed(GameText.extraTurnText(playerName),"Roll");
+			GUI.getUserButtonPressed(GameText.extraTurnText(playerName)+"\n\n\n\n\n\n","Roll");
 		else
-			GUI.getUserButtonPressed(GameText.turnText(playerName),"Roll");
+			GUI.getUserButtonPressed(GameText.turnText(playerName)+"\n\n\n\n\n\n","Roll");
 	}
 	
 	/**
@@ -88,7 +88,7 @@ public class GUIController {
 		//Moves the player to the new position
 		movePlayer(playerName,playerPosition-1);
 		//Gives the user some text.
-		GUI.getUserButtonPressed(GameText.rollText(playerName, currentDice)+"\n"+GameText.fieldDescription[playerPosition-2],"Ok");
+		GUI.getUserButtonPressed(GameText.rollText(playerName, currentDice)+"\n"+GameText.fieldDescription[playerPosition-2]+"\n","Ok");
 		//Change the balance.
 		GUI.setBalance(playerName, playerBalance);
 		
