@@ -11,7 +11,8 @@
 ## Hvad mangler
 * Design
 * Implementering
-* Use-case diagram kommentarer
 * Test
 * Konklusion
 * System krav - nyt afsnit
+* Stort klasse diagram - Arvid
+
