@@ -7,10 +7,10 @@
 * use case beskrivelser
 * SSD
 * Formelle test
-
-## Hvad mangler
 * Design
 * Implementering
+
+## Hvad mangler
 * Test
 * Konklusion
 * Stort klasse diagram - Arvid
