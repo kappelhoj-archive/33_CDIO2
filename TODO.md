@@ -13,6 +13,5 @@
 ## Hvad mangler
 * Test
 * Konklusion
-* Stort klasse diagram - Arvid
-* Formelle test bilag- Arvid
+* Formelle test bilag (PDF) - Arvid
 
