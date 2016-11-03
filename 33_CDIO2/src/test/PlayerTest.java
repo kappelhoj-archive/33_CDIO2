@@ -9,9 +9,7 @@ import org.junit.Test;
 import game.Player;
 
 public class PlayerTest {
-
-
-Player player;	
+Player player;
 	
 	@Before
 	public void setUp() throws Exception {
@@ -35,5 +33,15 @@ Player player;
 		String actual = player.getPlayerName();
 		assertEquals(expected,actual);
 	}
-
+	
+	/**
+	 * TEST ID: UP02
+	 * Tests if the account balance for a new players is 1000
+	 */
+	@Test
+	public void testGetAccountBalance() {
+		int expected = 1000;
+		int actual = player.getAccountBalance();
+		assertEquals(expected, actual);
+	}
 }

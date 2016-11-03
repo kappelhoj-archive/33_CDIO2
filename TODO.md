@@ -7,11 +7,5 @@
 * use case beskrivelser
 * SSD
 * Formelle test
-
-## Hvad mangler
 * Design
 * Implementering
-* Use-case diagram kommentar
-* Test
-* Konklusion
-* System krav - nyt afsnit
