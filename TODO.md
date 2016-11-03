@@ -9,9 +9,3 @@
 * Formelle test
 * Design
 * Implementering
-
-## Hvad mangler
-* Test
-* Konklusion
-* Formelle test bilag (PDF) - Arvid
-
